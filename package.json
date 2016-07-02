@@ -1,0 +1,29 @@
+{
+  "name": "react-redux-classconnect",
+  "version": "1.0.0",
+  "description": "A simple class-based connect for Redux and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jondot/react-redux-classconnect.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "connect"
+  ],
+  "author": "Dotan Nahum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jondot/react-redux-classconnect/issues"
+  },
+  "homepage": "https://github.com/jondot/react-redux-classconnect#readme",
+  "dependencies": {
+    "react": "^15.2.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  }
+}
