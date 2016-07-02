@@ -48,7 +48,7 @@ export default connect(
 
 Do this:
 
-```
+```javascript
 import connect from 'react-redux-classconnect'
 
 class FriendListApp extends Component {
@@ -83,7 +83,7 @@ export default connect(FriendListApp);
 Or, if your actions are pretty standard, just this:
 
 
-```
+```javascript
 import connect from 'react-redux-classconnect'
 
 class FriendListApp extends Component {
