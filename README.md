@@ -80,3 +80,37 @@ class FriendListApp extends Component {
 export default connect(FriendListApp);
 ```
 
+Or, if your actions are pretty standard, just this:
+
+
+```
+import connect from 'react-redux-classconnect'
+
+class FriendListApp extends Component {
+  static propTypes = {
+    friendList: PropTypes.object.isRequired,
+    actions: PropTypes.object.isRequired
+  };
+
+  static stateProps = (state)=>({
+      friendList: state.friendList
+  })
+
+  static actionProps = {
+      actions: FriendsActions
+  }
+
+  render () {
+    const { friendList: { friendsById }, actions } = this.props;
+
+    return (
+      <div className="friendListApp">
+        <h1>Da Bro's List</h1>
+        <AddFriendInput addFriend={actions.addFriend} />
+        <FriendList friends={friendsById} actions={actions} />
+      </div>
+    );
+  }
+}
+export default connect(FriendListApp);
+```
