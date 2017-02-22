@@ -27,6 +27,8 @@ describe('react-redux-classconnect', () => {
   });
 
   it('wraps a component with actionProps', () => {
+    // This test is NOT correct - we should be checking the component's
+    // dispatchProps
     const actual = connect(mockComponentActionProps);
     expect(actual.displayName).toBe(`Connect(${mockComponentActionProps.name})`);
     expect(actual.actionProps).toBe(mockComponentActionProps.actionProps);
