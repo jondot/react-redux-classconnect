@@ -2,9 +2,9 @@
   "name": "react-redux-classconnect",
   "version": "1.0.2",
   "description": "A simple class-based connect for Redux and React",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,15 @@
     "url": "https://github.com/jondot/react-redux-classconnect/issues"
   },
   "homepage": "https://github.com/jondot/react-redux-classconnect#readme",
+  "jest": {
+    "collectCoverageFrom": ["src/*.js", "!**/node_modules/**"]
+  },
   "peerDependencies": {
     "react": "^15.2.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "jest": "^19.0.0"
   }
 }
