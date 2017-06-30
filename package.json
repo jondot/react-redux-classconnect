@@ -4,7 +4,8 @@
   "description": "A simple class-based connect for Redux and React",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
